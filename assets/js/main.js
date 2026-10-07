@@ -16,6 +16,9 @@ const NAV_HTML = `
             <li><a href="{root}/works/work5.html">作品五</a></li>
         </ul>
     </li>
+
+    <li><a href="{root}/thanks.html">致谢</a></li>
+
   </ul>
 `;
 
