@@ -1,0 +1,35 @@
+.game-player {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: #000;
+}
+
+.game-player__play,
+.game-player__frame {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.game-player__play {
+    display: grid;
+    place-items: center;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    font: inherit;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.game-player__play:hover,
+.game-player__play:focus-visible {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.game-player__frame {
+    border: 0;
+}

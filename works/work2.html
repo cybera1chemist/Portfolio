@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>作品二：车仔面</title>
+    <title>随机井字棋</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/game-player.css">
     <script src="../assets/js/main.js" defer></script>
 </head>
 
@@ -12,14 +13,35 @@
     <nav id="site-nav"></nav>
 
     <main>
-        <h1>车仔面</h1>
+        <h1>随机井字棋</h1>
 
-        <img class="work_image" src="../assets/img/placeholders/work2.jpg" alt="我的2号作品">
+        <!-- TODO: 多加一点描述 -->
+        <p>这是 SM5350 (Game Design Fundamentals) 这门课的作业2！</p>
 
-        <h3>作品介绍</h3>
-        <div class="work_content">    
-        <p>这是在佐敦地铁站E出口吃到的车仔面，可以自选想吃的菜，味道很不错，也不贵，老板人很好。</p>
-        </div> 
+        <h3>游戏规则</h3>
+        <!-- TODO: 把游戏规则写完！ -->
+
+        <section class="game-player" aria-label="随机井字棋试玩">
+            <button class="game-player__play" type="button">Play</button>
+        </section>
+        <script>
+            const gamePlayer = document.querySelector('.game-player');
+            const playButton = gamePlayer.querySelector('.game-player__play');
+
+            playButton.addEventListener('click', () => {
+                const gameFrame = document.createElement('iframe');
+                gameFrame.className = 'game-player__frame';
+                gameFrame.src = '../games/work2/ticktacktoe.html';
+                gameFrame.title = '随机井字棋';
+                gameFrame.allow = 'autoplay; fullscreen; gamepad';
+
+                gamePlayer.replaceChildren(gameFrame);
+            }, { once: true });
+        </script>
+
+        <h3>设计思路</h3>
+        <!-- TODO: 把设计思路给写了！ -->
+
     </main>
 
 </body>
