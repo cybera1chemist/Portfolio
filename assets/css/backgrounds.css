@@ -1,0 +1,16 @@
+.tiled-background {
+    background-image: var(--tile-image);
+    background-repeat: repeat;
+    background-size: var(--tile-size, 256px);
+}
+
+.tiled-background--dirt {
+    --tile-image: url("../img/background_elements/dirt.png");
+    --tile-size: 192px;
+}
+
+.content-panel {
+    background-color: rgba(255, 255, 255, 0.84);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+}
