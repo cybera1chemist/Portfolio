@@ -146,3 +146,14 @@ main {
     object-fit: cover;
     object-position: center;
 }
+
+footer {
+  padding: 24px;
+  text-align: center;
+}
+
+footer p {
+  color: #777482;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
