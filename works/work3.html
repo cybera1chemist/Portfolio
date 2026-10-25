@@ -16,7 +16,7 @@
     <main class="content-panel">
         <h1>二重奏·福音战争之记忆</h1>
 
-        <p>这是 SM5350 (Game Design Fundamentals) 这门课的作业2！</p>
+        <p>这是 SM5350 (Game Design Fundamentals) 这门课的作业3！</p>
         <p>作业要求：在原版《井字棋》游戏的基础上增加少量规则，以让它变得更加有趣。</p>
 
         <h3>游戏规则</h3>
@@ -28,7 +28,7 @@
 
         <h3>试玩游戏</h3>
         <p>如果点击 Play 后没反应请刷新页面！</p>
-        <section class="game-player" aria-label="随机井字棋试玩">
+        <section class="game-player" aria-label="作品3试玩">
             <button class="game-player__play" type="button">Play</button>
         </section>
         <script>
@@ -38,8 +38,8 @@
             playButton.addEventListener('click', () => {
                 const gameFrame = document.createElement('iframe');
                 gameFrame.className = 'game-player__frame';
-                gameFrame.src = '../games/work2/ticktacktoe.html';
-                gameFrame.title = '随机井字棋';
+                gameFrame.src = '../games/work3/duet.html';
+                gameFrame.title = '二重奏·福音战争之记忆';
                 gameFrame.allow = 'autoplay; fullscreen; gamepad';
 
                 gamePlayer.replaceChildren(gameFrame);
